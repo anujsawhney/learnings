@@ -14,6 +14,7 @@ public class FunctionExample {
     static Function<String,String> f1 = i -> i.toUpperCase();
     static Function<String,String> f2 = i -> i.concat("default");
 
+    //BiFunction does not have compose method and has only andThen default  method
     static BiFunction<List<Student>, Predicate<Student>, Map<String, Double>> biFunc = (sl, p1) -> {
         Map<String, Double> hm = new HashMap<>();
         sl.forEach(s-> {
