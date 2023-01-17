@@ -10,7 +10,7 @@ public class FunctionExample {
         //and has abstract method named apply
         System.out.println(f1.apply("java8"));//JAVA8
 
-        //also has a default andThen method
+        //also has a default andThen method which is executed after first function
         System.out.println(f1.andThen(f2).apply("java8"));//JAVA8default
 
         //also has a default compose method whose param function is executed before the first one
